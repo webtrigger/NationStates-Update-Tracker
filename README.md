@@ -3,6 +3,12 @@
 ## Installation  
 To install dependancies, run `npm i`. This will install the [node-expat](https://www.npmjs.com/package/node-expat) package, which is a C++ addon to node that needs to be compiled with [node-gyp](https://github.com/nodejs/node-gyp#installation).  
 
+Before running `minor_update.js`, be sure to go into the file, and set the `USER_NATION` variable to whatever your nation is. For example:
+```js
+const USER_NATION = "Zizou";
+```
+You do not need to this for the `major_update.js` script, since that one works solely off of the data dumps.
+
 ## Usage  
 In the repo, two scripts are provided: `major_update.js` and `minor_update.js`. The former will download the latest data dump, and will pull the lastupdate times from the dump. The latter will grab a list of regions from the dumps, and use the lastupdate API shard to determine when it last updated.  
 
