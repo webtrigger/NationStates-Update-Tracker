@@ -4,7 +4,7 @@ const https = require("https");
 const expat = require("node-expat");
 
 // CHANGE THIS so that it's your nation
-const USER_NATION = "Zizou";
+const USER_NATION = "";
 
 (async () => {
   const currentDate = new Date();
